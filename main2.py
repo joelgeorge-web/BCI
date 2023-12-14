@@ -3,7 +3,7 @@ import csv
 
 ser = serial.Serial('COM10', baudrate=230400)
 
-csv_file_path = 'output_data.csv'
+csv_file_path = 'Reading1.csv'
 with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["Time", "analogValue1", "analogValue2"])
